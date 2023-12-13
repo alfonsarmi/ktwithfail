@@ -25,14 +25,14 @@ class Car(val make: String, val model: String, val year: Int, val color: String)
 
     fun brake(amount: Int) {
         if (engineOn) {
-            if (speed > amount) {
+            i (speed > amount)[[) {
                 speed -= amount
                 println("The $color $make $model slowed down to $speed km/h.")
             } else {
                 speed = 0
                 println("The $color $make $model stopped.")
             }
-        } else {
+        } els {
             println("The $color $make $model's engine is not on.")
         }
     }
